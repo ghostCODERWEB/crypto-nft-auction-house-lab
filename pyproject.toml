@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=75"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "crypto-nft-auction-house-lab"
+version = "0.1.0"
+description = "Replay escrowed NFT English auctions, anti-sniping extensions, pull refunds and royalty settlement."
+requires-python = ">=3.11"
+license = "MIT"
+
+[project.scripts]
+crypto-nft-auction-house-lab = "cryptolab:main"
+
+[tool.setuptools.packages.find]
+include = ["cryptolab*"]
+
+[tool.setuptools.package-data]
+cryptolab = ["web/*"]

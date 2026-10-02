@@ -1,0 +1,51 @@
+{
+  "auctions": {
+    "auction1": {
+      "bid": 300,
+      "bidder": "bob",
+      "creator": "artist",
+      "end": 24,
+      "extension": 5,
+      "increment": 1,
+      "reserve": 100,
+      "royalty_bps": 500,
+      "seller": "seller",
+      "status": "settled",
+      "token": "nft1"
+    }
+  },
+  "balances": {
+    "alice": 1000,
+    "artist": 15,
+    "bob": 700,
+    "protocol": 7,
+    "seller": 278
+  },
+  "events": [
+    {
+      "id": "auction1",
+      "type": "create"
+    },
+    {
+      "id": "auction1",
+      "type": "bid"
+    },
+    {
+      "id": "auction1",
+      "type": "bid"
+    },
+    {
+      "id": "refund1",
+      "type": "refund"
+    },
+    {
+      "id": "auction1",
+      "type": "settle"
+    }
+  ],
+  "initial_total": 2000,
+  "nft_owners": {
+    "nft1": "bob"
+  },
+  "pending_refunds": {}
+}

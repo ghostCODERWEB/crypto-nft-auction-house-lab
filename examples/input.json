@@ -1,0 +1,53 @@
+{
+  "config": {
+    "platform": "protocol",
+    "balances": {
+      "alice": 1000,
+      "bob": 1000,
+      "seller": 0
+    },
+    "nfts": {
+      "nft1": "seller"
+    },
+    "fee_bps": 250
+  },
+  "events": [
+    {
+      "type": "create",
+      "id": "auction1",
+      "seller": "seller",
+      "token": "nft1",
+      "reserve": 100,
+      "end": 20,
+      "extension": 5,
+      "royalty_bps": 500,
+      "creator": "artist",
+      "timestamp": 1
+    },
+    {
+      "type": "bid",
+      "id": "auction1",
+      "bidder": "alice",
+      "amount": 200,
+      "timestamp": 10
+    },
+    {
+      "type": "bid",
+      "id": "auction1",
+      "bidder": "bob",
+      "amount": 300,
+      "timestamp": 19
+    },
+    {
+      "type": "refund",
+      "id": "refund1",
+      "owner": "alice",
+      "timestamp": 20
+    },
+    {
+      "type": "settle",
+      "id": "auction1",
+      "timestamp": 24
+    }
+  ]
+}
